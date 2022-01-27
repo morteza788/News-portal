@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport"
+         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title> admindashboard </title>
+      <link rel="stylesheet" href="<?= asset('public/admin/css/bootstrap.min.css') ?>">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+      <!-- Material Design Bootstrap -->
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.6/css/mdb.min.css" rel="stylesheet">
+      <link href="<?= asset('public/admin/css/style.css') ?>" rel="stylesheet">
+   </head>
+   <body>
+      <nav class="navbar  navbar-light bg-gradiant-green-blue nav-shadow">
+         <a class="navbar-brand" href="#">  dashboard  </a>
+         <span class="">
+            <span class="dropdown">
+               <a class="dropdown-toggle text-decoration-none text-dark" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+               <i class="fas fa-user"></i> morteza nasrollahi
+               </a>
+               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#"> reset password </a>
+                  <a class="dropdown-item" href="#"> logout </a>
+               </div>
+            </span>
+         </span>
+      </nav>
+      <div class="container-fluid">
+      <div class="row">
+      <nav class="col-md-2 d-none d-md-block pt-3 bg-sidebar sidebar px-0">
+         <a class="text-decoration-none d-block py-1 px-2 mt-0" href="<?= url('admin') ?>"><i class="fas fa-home"></i> Home</a>
+         <a class="text-decoration-none d-block py-1 px-2 mt-3" href="<?= url('admin/category') ?>"><i class="fas fa-clipboard-list"></i>
+         Category</a>
+         <a class="text-decoration-none d-block py-1 px-2 mt-3" href="<?= url('admin/article') ?>"><i class="fas fa-newspaper"></i> Article
+         </a>
+         <a class="text-decoration-none d-block py-1 px-2 mt-3" href="#"><i class="fas fa-bars"></i> Menu</a>
+         <a class="text-decoration-none d-block py-1 px-2 mt-3" href="#"><i class="fas fa-comments"></i> Comment</a>
+         <a class="text-decoration-none d-block py-1 px-2 mt-3" href="#"><i class="fas fa-users"></i> User</a>
+      </nav>
+      <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
